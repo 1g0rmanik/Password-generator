@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="website icon"  type="png" href="password.png">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="pass">
+            <span id="password">+D7_D.0ja@_Y~</span>
+            <button onclick="copyText()">📋</button>
+            <button onclick="updateValue()">🔄️</button>
+        </div>
+        <div class="gen_menu">
+            <input type="range" min="5" max="45" id="range">
+            <p>Current value: <span id="currentValue">13</span></p>
+            <div class="checkbox-group">
+                <label>Numbers: <input type="checkbox" id="numbers"></label>
+                <label>Letters: <input type="checkbox" id="letters"></label>
+                <label>Symbols: <input type="checkbox" id="symbols"></label>
+            </div>
+            <div class="strength-meter">
+                <p>Strength: <span id="strength-text">Weak</span></p>
+                <div class="strength-bar">
+                    <div id="strength-indicator"></div>
+                </div>
+        </div>
+    </div>
+</body>
+<script src="logick.js"></script>
+</html>
